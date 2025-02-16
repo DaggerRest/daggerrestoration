@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>D.A.G.G.E.R. Restoration</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,24 +13,45 @@
     .navbar {
       background-color: #343a40;
       padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 1;
     }
     .navbar-brand img {
-      height: 50px;
-      margin-right: 10px;
+      height: auto;
+      max-width: 150px;
     }
-    .navbar-brand span {
-      font-size: 1.5rem;
-      font-weight: bold;
+    .header-text {
       color: white;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
     }
-    .navbar-nav .nav-link {
-      color: white !important;
+    .dagger {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    .restoration {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
     }
     .section-title {
       margin: 40px 0 20px;
       text-align: center;
       font-size: 2em;
       text-transform: uppercase;
+      transition: text-align 0.5s ease-in-out;
     }
     .gallery img {
       max-width: 100%;
@@ -49,28 +71,45 @@
       max-width: 600px;
       margin: 0 auto;
     }
+    @media (orientation: portrait) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .header-text {
+        text-align: right;
+        align-items: flex-end;
+      }
+    }
+    @media (orientation: landscape) {
+      .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar-brand {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .header-text {
+        text-align: right;
+        margin-left: auto;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-dark">
     <a class="navbar-brand" href="#">
-      <img src="Logo.jpg" alt="Dagger Restoration Logo" />
-      <span>D.A.G.G.E.R. Restoration</span>
+      <img src="images/dagger-logo.png" alt="Dagger Restoration Logo" />
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#current">Current Project</a></li>
-        <li class="nav-item"><a class="nav-link" href="#past">Past Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
+    <div class="header-text">
+      <span class="dagger">D.A.G.G.E.R.</span>
+      <span class="restoration">Restoration</span>
     </div>
   </nav>
 
-  <!-- Main Content -->
   <div class="container my-5">
     <section id="current">
       <h2 class="section-title">Current Restoration Project</h2>
@@ -79,7 +118,7 @@
         <div class="col-md-4"><img src="images/current2.jpg" alt="Restoration in Progress 2" /></div>
         <div class="col-md-4"><img src="images/current3.jpg" alt="Restoration in Progress 3" /></div>
       </div>
-      <p class="mt-3 text-center">We are restoring a beloved community building, blending modern techniques with traditional craftsmanship.</p>
+      <p class="mt-3 text-center">We are restoring a historic building, blending modern techniques with traditional craftsmanship: OLD & NEW</p>
     </section>
     
     <section id="past">
@@ -116,13 +155,8 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 D.A.G.G.E.R. Restoration. All Rights Reserved.</p>
-      <p><a href="https://daggerrestoration.com/additional-material" target="_blank">Additional Material</a></p>
+      <p>&copy; 2025 D.A.G.G.E.R. Restoration. All Rights Reserved.<a href="https://daggerrestoration.com/additional-material" target="_blank">Additional Material</a></p>
     </div>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
