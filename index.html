@@ -8,111 +8,58 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #0d1117;
-            color: #c9d1d9;
-            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #222;
+            padding: 15px;
+            color: white;
         }
         header img {
-    max-width: 150px;
-    height: auto;
-}
-        header {
-            <img src="Logo.jpg" alt="D.A.G.G.E.R. Restoration Logo" width="150">
-    <h1>D.A.G.G.E.R. Restoration</h1>
-             display: flex;
-    align-items: center;
-    gap: 10px;
-            background-color: #161b22;
-            color: #58a6ff;
-            padding: 20px;
-            text-transform: uppercase;
-            font-weight: bold;
+            max-width: 100px;
+            height: auto;
+            margin-right: 15px;
         }
-        section {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            border-radius: 10px;
-            background-color: #161b22;
-            margin-bottom: 20px;
-            box-shadow: 0px 0px 10px rgba(88, 166, 255, 0.3);
+        h1 {
+            margin: 0;
+            font-size: 24px;
         }
-        .project-gallery img {
-            width: 100%;
-            max-width: 350px;
-            margin: 10px;
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(88, 166, 255, 0.5);
-        }
-        footer {
-            background-color: #161b22;
-            color: #58a6ff;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            font-size: 0.8em;
-        }
-        a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
+
     <header>
+        <img src="Logo.jpg" alt="D.A.G.G.E.R. Restoration Logo">
         <h1>D.A.G.G.E.R. Restoration</h1>
-        <p>Precision. Strength. Innovation.</p>
     </header>
-    
-    <section>
-        <h2>About Us</h2>
-        <p>D.A.G.G.E.R. Restoration specializes in high-tech, precision-based restoration and repair services. We bring innovative solutions to complex problems, ensuring the highest standards of quality and efficiency.</p>
-    </section>
-    
-    <section>
-        <h2>Current Project</h2>
-        <p>We are currently restoring and expanding a daycare space to enhance its functionality and safety. Follow our progress below.</p>
-        <a href="#gallery">View Project Photos</a>
-    </section>
-    
-    <section>
-        <h2>Past Projects</h2>
-        <p>Explore our past projects that showcase our commitment to precision and excellence.</p>
-        <a href="#past-gallery">View Past Projects</a>
-    </section>
-    
-    <section>
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/your_form_id" method="POST">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    
-    <section id="gallery" class="project-gallery">
-        <h2>Project Gallery</h2>
-        <img src="project1.jpg" alt="Current Project Image">
-        <img src="project2.jpg" alt="Current Project Image">
-    </section>
-    
-    <section id="past-gallery" class="project-gallery">
-        <h2>Past Projects Gallery</h2>
-        <img src="past1.jpg" alt="Past Project Image">
-        <img src="past2.jpg" alt="Past Project Image">
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 D.A.G.G.E.R. Restoration | Precision. Strength. Innovation.</p>
-    </footer>
+
+    <div class="container">
+        <h2>Welcome to D.A.G.G.E.R. Restoration</h2>
+        <p><strong>D.A.G.G.E.R.</strong> stands for <em>David Alan Griffiths General Emergencies and Repairs.</em></p>
+        <p>We specialize in **helping property owners protect their investments** during emergencies and provide expert damage assessments and estimates.</p>
+
+        <h3>What We Do</h3>
+        <ul>
+            <li>Emergency property protection</li>
+            <li>Damage assessments & estimates</li>
+            <li>Rapid response restoration</li>
+        </ul>
+
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <p>Phone: (XXX) XXX-XXXX</p>
+    </div>
+
 </body>
 </html>
