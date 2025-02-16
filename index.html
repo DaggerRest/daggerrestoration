@@ -89,17 +89,22 @@
     }
     @media (orientation: landscape) {
       .navbar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
       }
       .navbar-brand {
+        flex-direction: row;
         align-items: center;
+        justify-content: flex-end;
+        margin-right: 10px;
+      }
+      .navbar-brand img {
+        margin-right: 15px;
       }
       .header-text {
-        text-align: center;
-        align-items: center;
-        margin-left: 0;
+        text-align: left;
+        align-items: flex-start;
       }
       .footer-text {
         display: inline;
