@@ -14,15 +14,15 @@
       background-color: #000000;
       padding: 15px 20px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
     }
     .navbar-brand {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      flex-grow: 1;
+      flex-direction: column;
+      text-align: center;
     }
     .navbar-brand img {
       height: auto;
@@ -30,10 +30,10 @@
     }
     .header-text {
       color: white;
-      text-align: right;
+      text-align: center;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
       font-family: 'Orbitron', sans-serif;
       font-weight: 700;
       text-transform: uppercase;
@@ -71,6 +71,9 @@
       max-width: 600px;
       margin: 0 auto;
     }
+    .footer-text {
+      display: block;
+    }
     @media (orientation: portrait) {
       .navbar {
         flex-direction: column;
@@ -80,21 +83,26 @@
         text-align: right;
         align-items: flex-end;
       }
+      .footer-text {
+        display: block;
+      }
     }
     @media (orientation: landscape) {
       .navbar {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
       }
       .navbar-brand {
-        flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
       }
       .header-text {
-        text-align: right;
-        margin-left: auto;
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+      }
+      .footer-text {
+        display: inline;
       }
     }
   </style>
@@ -155,7 +163,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 D.A.G.G.E.R. Restoration. All Rights Reserved. <a href="https://daggerrestoration.com/additional-material" target="_blank">Additional Material</a></p>
+      <p class="footer-text">&copy; 2025 D.A.G.G.E.R. Restoration.<br class="footer-break"> All Rights Reserved. <a href="https://daggerrestoration.com/additional-material" target="_blank">Additional Material</a></p>
     </div>
   </footer>
 </body>
